@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-wsl-encoding
+      name: dsh-wsl-encoding
+      config:
+        timeoutMs: 15000
