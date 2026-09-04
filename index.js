@@ -11,12 +11,12 @@ export function apply(ctx, config = {}) {
   ctx.systemPrompt.section({
     name: "tool:encoding_doctor",
     order: 122,
-    text: "Use encoding_doctor for WSL/Windows interop: Diagnose UTF-8 vs Windows code-page issues for cmd/PowerShell.",
+    text: "Use encoding_doctor for UTF-8 vs Windows code-page issues, and optionally sample a .sh path for CRLF (breaks set -o pipefail in WSL). Pair with mnt_doctor when scripts live on /mnt/c.",
   });
 
   ctx.tools.register({
     name: "encoding_doctor",
-    description: "Diagnose UTF-8 vs Windows code-page issues for cmd/PowerShell.",
+    description: "Diagnose UTF-8/chcp and optionally sample a file for CRLF line endings that break bash under WSL.",
     parameters: core.parameters(config),
     output: {
       schema: core.outputSchema(),

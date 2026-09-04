@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-encoding",
-  "version": "0.1.0",
-  "description": "Diagnose UTF-8 vs Windows code-page issues for cmd/PowerShell.",
+  "version": "0.2.0",
+  "description": "encoding_doctor: UTF-8 vs Windows code page, optional CRLF file sample for WSL scripts.",
   "license": "MIT",
   "repository": {
     "type": "git",
