@@ -6,6 +6,18 @@
 
 [English → README.md](./README.md)
 
+## 在套件里的位置
+
+标出 UTF-8 和 Windows 代码页的差别，也可抽样脚本里的 CRLF。
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["encoding_doctor"] --> enc["UTF-8 对比 Windows 代码页"]
+```
+
+整套关系图和版本快照：[dsh-wsl-kit 中文说明](https://github.com/173787247/dsh-wsl-kit/blob/master/README.zh.md)。本插件是 **0.2.0**（full）。不要把那份总表抄进本 README。
+
+
 ## 兼容性
 
 | 项 | 值 |

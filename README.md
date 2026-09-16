@@ -5,6 +5,18 @@ Tool **`encoding_doctor`**: UTF-8 / chcp check; optional `path=` CRLF sample (fi
 
 [中文说明 → README.zh.md](./README.zh.md)
 
+## Where it sits
+
+Flags UTF-8 versus the Windows code page, and can sample CRLF in scripts the agent is about to run.
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["encoding_doctor"] --> enc["UTF-8 vs Windows code page"]
+```
+
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.2.0** (full). Do not copy that matrix into this README.
+
+
 ## Compatibility
 
 | Field | Value |
